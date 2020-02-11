@@ -1,0 +1,25 @@
+<h2>Мягкие игрушки</h2>
+<div *ngFor="let item of items">
+  <h3>
+    <a id="title" title="Посмотреть на Aliexpress" href="{{item.link}}">
+      {{ item.name }}
+    </a>
+  </h3>
+
+    <a title="Заказать на Aliexpress" href="{{item.link}}">
+      <img src="{{ item.image }}">
+    </a>
+
+  <p *ngIf="item.description">
+    {{ item.description }}
+  </p>
+
+  <p *ngIf="item.rating">
+    <img id="star" src="https://iconsplace.com/wp-content/uploads/_icons/ff0000/256/png/rating-star-icon-14-256.png">
+    {{ item.rating }}
+  </p>
+
+  <a href="https://api.whatsapp.com/send?text=See%20this!%20{{item.link}}" data-action="share/whatsapp/share"><button>
+    Share
+  </button></a>
+</div>

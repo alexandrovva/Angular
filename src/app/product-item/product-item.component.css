@@ -1,0 +1,20 @@
+img{
+  width: 400px;
+}
+
+#star{
+  display:inline-block;
+  width: 20px;
+  float:left;
+  padding-right:5px;
+}
+
+p{
+  font-weight: bold;
+  font-family: Helvetica;
+  font-size: 18px;
+}
+
+#title{
+  font-size: 30px;
+}
